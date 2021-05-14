@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'Chain_Example' do
+  pod 'Chain', :path => '../'
+
+  target 'Chain_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

@@ -1,0 +1,16 @@
+PODS:
+  - Chain (0.1.0)
+
+DEPENDENCIES:
+  - Chain (from `../`)
+
+EXTERNAL SOURCES:
+  Chain:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Chain: c5793ec95d66eee22a3f404a14115c20d1931fdb
+
+PODFILE CHECKSUM: ddae2bca302c9deb7b1f6965a8ca1af00aa282ab
+
+COCOAPODS: 1.10.1
