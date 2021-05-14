@@ -20,6 +20,10 @@ it, simply add the following line to your Podfile:
 pod 'Chain'
 ```
 
+## 例子
+
+### View
+- 代码
 ```swift
 class ViewController: UIViewController {
     
@@ -38,7 +42,8 @@ class ViewController: UIViewController {
     }
 }
 ```
-[!](https://user-images.githubusercontent.com/12118567/118298824-904df900-b512-11eb-8f34-f46e05193330.png)
+- 效果
+<img  width="22%" src="https://user-images.githubusercontent.com/12118567/118298824-904df900-b512-11eb-8f34-f46e05193330.png"/>
 
 ## Author
 
