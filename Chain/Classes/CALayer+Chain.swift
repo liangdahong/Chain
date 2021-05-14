@@ -18,29 +18,15 @@
 //    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //    THE SOFTWARE.
 
-import XCTest
-import Chain
 import UIKit
 
-class UIViewTest: XCTestCase {
+extension CALayer : ChainCompatible { }
+
+public extension Chain where Base: CALayer {
     
-    func testExample() {
-        let view = UIView().cp
-            .backgroundColor(.red)
-            .tag(998)
-            .alpha(0.4)
-            .isOpaque(true)
-            .isUserInteractionEnabled(false)
-            .frame(.init(x: 100, y: 100, width: 100, height: 100))
-            .clipsToBounds(true)
-            .focusGroupIdentifier("abc")
-            .end
-        
-        XCTAssert(view.tag == 998)
-        XCTAssert(view.frame == .init(x: 100, y: 100, width: 100, height: 100))
-        XCTAssert(view.isOpaque == true)
-        XCTAssert(view.clipsToBounds == true)
-        XCTAssert(view.focusGroupIdentifier == "abc")
-        XCTAssert(view.isUserInteractionEnabled == false)
+    @discardableResult
+    func cornerRadius(_ cornerRadius: CGFloat) -> Chain {
+        base.cornerRadius = cornerRadius
+        return self
     }
 }

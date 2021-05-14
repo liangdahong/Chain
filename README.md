@@ -20,9 +20,29 @@ it, simply add the following line to your Podfile:
 pod 'Chain'
 ```
 
+```swift
+class ViewController: UIViewController {
+    
+    let myView = UIView()
+        .cp
+        .backgroundColor(.red)
+        .frame(.init(x: 100, y: 100, width: 100, height: 100))
+        .end
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        myView.layer.cp
+            .cornerRadius(15)
+        view.addSubview(myView)
+    }
+}
+```
+[!](https://user-images.githubusercontent.com/12118567/118298824-904df900-b512-11eb-8f34-f46e05193330.png)
+
 ## Author
 
-hi@liangdahong.com, hi@liangdahong.com
+hi@liangdahong.com.
 
 ## License
 

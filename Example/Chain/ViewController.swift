@@ -26,12 +26,14 @@ class ViewController: UIViewController {
     let myView = UIView()
         .cp
         .backgroundColor(.red)
-        .tag(1)
         .frame(.init(x: 100, y: 100, width: 100, height: 100))
         .end
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        myView.layer.cp
+            .cornerRadius(15)
         view.addSubview(myView)
     }
 }

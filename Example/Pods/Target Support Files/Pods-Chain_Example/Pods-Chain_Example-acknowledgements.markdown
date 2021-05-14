@@ -3,7 +3,7 @@ This application makes use of the following third party libraries:
 
 ## Chain
 
-Copyright (c) 2021 hi@liangdahong.com <hi@liangdahong.com>
+Copyright (c) 2021 梁大红 <hi@liangdahong.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
