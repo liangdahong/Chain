@@ -44,6 +44,5 @@ class ViewController: UIViewController {
         view.addSubview(myView)
         
         view.addSubview(switchView)
-        
     }
 }
