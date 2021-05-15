@@ -29,11 +29,21 @@ class ViewController: UIViewController {
         .frame(.init(x: 100, y: 100, width: 100, height: 100))
         .end
     
+    let switchView = UISwitch().cp
+        .setOn(true, animated: true)
+        .onTintColor(.red)
+        .thumbTintColor(.blue)
+        .frame(.init(x: 100, y: 210, width: 30, height: 30))
+        .end
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         myView.layer.cp
             .cornerRadius(15)
         view.addSubview(myView)
+        
+        view.addSubview(switchView)
+        
     }
 }

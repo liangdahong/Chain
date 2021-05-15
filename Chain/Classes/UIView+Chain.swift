@@ -123,16 +123,6 @@ public extension Chain where Base: UIView {
 public extension Chain where Base: UIView {
     
     @discardableResult
-    @available(iOS 13.0, *)
-    func overrideUserInterfaceStyle(_ overrideUserInterfaceStyle: UIUserInterfaceStyle) -> Chain {
-        base.overrideUserInterfaceStyle = overrideUserInterfaceStyle
-        return self
-    }
-}
-
-public extension Chain where Base: UIView {
-    
-    @discardableResult
     @available(iOS 8.0, *)
     func layoutMargins(_ layoutMargins: UIEdgeInsets) -> Chain {
         base.layoutMargins = layoutMargins
@@ -157,6 +147,84 @@ public extension Chain where Base: UIView {
     @available(iOS 11.0, *)
     func insetsLayoutMarginsFromSafeArea(_ insetsLayoutMarginsFromSafeArea: Bool) -> Chain {
         base.insetsLayoutMarginsFromSafeArea = insetsLayoutMarginsFromSafeArea
+        return self
+    }
+}
+
+public extension Chain where Base: UIView {
+    
+    @discardableResult
+    func clearsContextBeforeDrawing(_ clearsContextBeforeDrawing: Bool) -> Chain {
+        base.clearsContextBeforeDrawing = clearsContextBeforeDrawing
+        return self
+    }
+    
+    @discardableResult
+    func isHidden(_ isHidden: Bool) -> Chain {
+        base.isHidden = isHidden
+        return self
+    }
+    
+    @discardableResult
+    func contentMode(_ contentMode: UIView.ContentMode) -> Chain {
+        base.contentMode = contentMode
+        return self
+    }
+    
+    @discardableResult
+    @available(iOS 8.0, *)
+    func mask(_ mask: UIView?) -> Chain {
+        base.mask = mask
+        return self
+    }
+    
+    @discardableResult
+    @available(iOS 7.0, *)
+    func insetsLayoutMarginsFromSafeArea(_ tintColor: UIColor) -> Chain {
+        base.tintColor = tintColor
+        return self
+    }
+    
+    @discardableResult
+    @available(iOS 7.0, *)
+    func tintAdjustmentMode(_ tintAdjustmentMode: UIView.TintAdjustmentMode) -> Chain {
+        base.tintAdjustmentMode = tintAdjustmentMode
+        return self
+    }
+    
+    @discardableResult
+    @available(iOS 7.0, *)
+    func gestureRecognizers(_ gestureRecognizers: [UIGestureRecognizer]?) -> Chain {
+        base.gestureRecognizers = gestureRecognizers
+        return self
+    }
+}
+
+public extension Chain where Base: UIView {
+    
+    @discardableResult
+    @available(iOS 7.0, *)
+    func motionEffects(_ motionEffects: [UIMotionEffect]) -> Chain {
+        base.motionEffects = motionEffects
+        return self
+    }
+    
+    @discardableResult
+    func translatesAutoresizingMaskIntoConstraints(_ translatesAutoresizingMaskIntoConstraints: Bool) -> Chain {
+        base.translatesAutoresizingMaskIntoConstraints = translatesAutoresizingMaskIntoConstraints
+        return self
+    }
+    
+    @discardableResult
+    func restorationIdentifier(_ restorationIdentifier: String?) -> Chain {
+        base.restorationIdentifier = restorationIdentifier
+        return self
+    }
+    
+    @discardableResult
+    @available(iOS 13.0, *)
+    func overrideUserInterfaceStyle(_ overrideUserInterfaceStyle: UIUserInterfaceStyle) -> Chain {
+        base.overrideUserInterfaceStyle = overrideUserInterfaceStyle
         return self
     }
 }
