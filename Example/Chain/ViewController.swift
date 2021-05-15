@@ -20,8 +20,15 @@
 
 import UIKit
 import Chain
+import Then
 
 class ViewController: UIViewController {
+    
+    let titleLabel = UILabel().then {
+        $0.textColor = .black
+        $0.textAlignment = .center
+        $0.backgroundColor = .red
+    }
     
     let myView = UIView()
         .cp

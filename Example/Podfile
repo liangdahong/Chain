@@ -4,6 +4,7 @@ platform :ios, '9.0'
 
 target 'Chain_Example' do
   pod 'Chain', :path => '../'
+  pod 'Then'
 
   target 'Chain_Tests' do
     inherit! :search_paths

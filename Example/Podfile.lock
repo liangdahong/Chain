@@ -1,8 +1,14 @@
 PODS:
   - Chain (0.1.0)
+  - Then (2.7.0)
 
 DEPENDENCIES:
   - Chain (from `../`)
+  - Then
+
+SPEC REPOS:
+  trunk:
+    - Then
 
 EXTERNAL SOURCES:
   Chain:
@@ -10,7 +16,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Chain: c5793ec95d66eee22a3f404a14115c20d1931fdb
+  Then: acfe0be7e98221c6204e12f8161459606d5d822d
 
-PODFILE CHECKSUM: ddae2bca302c9deb7b1f6965a8ca1af00aa282ab
+PODFILE CHECKSUM: 7ff3d9758e208c8b487faaa737e3f5e3414e19c7
 
 COCOAPODS: 1.10.1

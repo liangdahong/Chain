@@ -295,10 +295,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Chain_Example/Pods-Chain_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Chain/Chain.framework",
+				"${BUILT_PRODUCTS_DIR}/Then/Then.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Chain.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Then.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
